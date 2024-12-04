@@ -7,7 +7,7 @@ export default function Home() {
   const [activePlan, setActivePlan] = useState(null);
 
   const beltLevels = [
-    { name: 'White Belt', description: 'Represents purity and the beginning of a learning journey. The practitioner starts as a blank slate, ready to absorb knowledge.', color: 'bg-white' },
+    { name: 'White Belt', description: 'aaaaaaaaaaaaaaa the beginning of a learning journey. The practitioner starts as a blank slate, ready to absorb knowledge.', color: 'bg-white' },
     { name: 'Yellow Belt', description: 'Marks the awakening of knowledge, like the rising sun. The student begins to understand the fundamentals of karate', color: 'bg-yellow-300' },
     { name: 'Orange Belt', description: 'Symbolizes the warmth of growth and initial strength. The student strengthens their foundation and advances in technique', color: 'bg-orange-400' },
     { name: 'Green Belt', description: 'Represents growth and continuous development, like a plant beginning to flourish on the karate path', color: 'bg-green-500' },
