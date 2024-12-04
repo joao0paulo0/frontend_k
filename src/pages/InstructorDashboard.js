@@ -90,17 +90,27 @@ export default function InstructorDashboard() {
   const handleSendEmail = async (studentId) => {
     try {
       const token = localStorage.getItem('token');
-      await axios.post(
-        `http://localhost:5000/api/users/send-email/${studentId}`,
+      const response = await axios.post(
+        `${process.env.REACT_APP_API_URL}/api/users/send-email/${studentId}`,
         emailContent,
-        { headers: { Authorization: `Bearer ${token}` } }
+        { 
+          headers: { 
+            Authorization: `Bearer ${token}`,
+            'Content-Type': 'application/json'
+          } 
+        }
       );
-      setShowEmailModal(false);
-      setEmailContent({ subject: '', message: '' });
-      alert('Email sent successfully!');
+
+      if (response.data.success) {
+        setShowEmailModal(false);
+        setEmailContent({ subject: '', message: '' });
+        alert('Email sent successfully!');
+      } else {
+        alert('Failed to send email: ' + response.data.message);
+      }
     } catch (error) {
       console.error('Error sending email:', error);
-      alert('Failed to send email');
+      alert('Failed to send email: ' + (error.response?.data?.message || error.message));
     }
   };
 
