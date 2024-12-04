@@ -128,12 +128,12 @@ export default function Home() {
           <div className="text-center">
             <h2 className="text-3xl font-extrabold text-gray-900">Contact Us</h2>
             <p className="mt-4 text-lg text-gray-600">
-              Have questions? Get in touch with us.
+              Alguma duvida recorre aos nossos contactos!
             </p>
             <div className="mt-8">
-              <p className="text-gray-600">Email: contact@karateschool.com</p>
-              <p className="text-gray-600">Phone: (555) 123-4567</p>
-              <p className="text-gray-600">Address: 123 Dojo Street, Martial Arts City</p>
+              <p className="text-gray-600">Email: karatini@gmail.com</p>
+              <p className="text-gray-600">Phone: (351) 255 123 123</p>
+              <p className="text-gray-600">Address: Ribeira, Porto</p>
             </div>
           </div>
         </div>
