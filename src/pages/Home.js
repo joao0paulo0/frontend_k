@@ -7,13 +7,13 @@ export default function Home() {
   const [activePlan, setActivePlan] = useState(null);
 
   const beltLevels = [
-    { name: 'White Belt', description: 'Represents purity and the beginning of a learning journey. The practitioner starts as a blank slate, ready to absorb knowledge.', color: 'bg-white' },
-    { name: 'Yellow Belt', description: 'Marks the awakening of knowledge, like the rising sun. The student begins to understand the fundamentals of karate', color: 'bg-yellow-300' },
-    { name: 'Orange Belt', description: 'Symbolizes the warmth of growth and initial strength. The student strengthens their foundation and advances in technique', color: 'bg-orange-400' },
-    { name: 'Green Belt', description: 'Represents growth and continuous development, like a plant beginning to flourish on the karate path', color: 'bg-green-500' },
-    { name: 'Blue Belt', description: 'The sky is the limit. This belt reflects the pursuit of a deeper understanding of karate techniques and values', color: 'bg-blue-500' },
-    { name: 'Brown Belt', description: 'Maturity and experience start to solidify. The practitioner is closer to mastery and refinement of skills', color: 'bg-amber-700' },
-    { name: 'Black Belt', description: 'The initial mastery of karate. It marks the end of one cycle and the beginning of a new one, where learning never stops', color: 'bg-black' }
+    { name: 'Cinto Branco', description: 'Represents purity and the beginning of a learning journey. The practitioner starts as a blank slate, ready to absorb knowledge.', color: 'bg-white' },
+    { name: 'Cinto Amarelo', description: 'Marks the awakening of knowledge, like the rising sun. The student begins to understand the fundamentals of karate', color: 'bg-yellow-300' },
+    { name: 'Cinto Laranja', description: 'Symbolizes the warmth of growth and initial strength. The student strengthens their foundation and advances in technique', color: 'bg-orange-400' },
+    { name: 'Cinto Verde', description: 'Represents growth and continuous development, like a plant beginning to flourish on the karate path', color: 'bg-green-500' },
+    { name: 'Cinto Azul', description: 'The sky is the limit. This belt reflects the pursuit of a deeper understanding of karate techniques and values', color: 'bg-blue-500' },
+    { name: 'Cinto Castanho', description: 'Maturity and experience start to solidify. The practitioner is closer to mastery and refinement of skills', color: 'bg-amber-700' },
+    { name: 'Cinto Preto', description: 'The initial mastery of karate. It marks the end of one cycle and the beginning of a new one, where learning never stops', color: 'bg-black' }
   ];
 
   const plans = [
