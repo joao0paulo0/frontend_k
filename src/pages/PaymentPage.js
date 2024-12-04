@@ -2,9 +2,6 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useAuth } from '../contexts/AuthContext';
 
-// Add these styles to the input fields in the payment modal
-const inputStyles = "appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-primary focus:border-primary focus:z-10 sm:text-sm";
-
 export default function PaymentPage() {
   const { currentUser } = useAuth();
   const [payments, setPayments] = useState([]);
